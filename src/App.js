@@ -15,11 +15,11 @@ function App() {
 
       <div className="row" >
 
-{
-  Data.map((ele)=><Card data={ele.imgsrc} title={ele.title} description={ele.description} link={ele.link} /> )
-}
+        {
+          Data.map((ele) => <Card data={ele.imgsrc} title={ele.title} description={ele.description} link={ele.link} key={ele.key} />)
+        }
       </div>
-      
+
 
 
     </>
